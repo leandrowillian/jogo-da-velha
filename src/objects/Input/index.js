@@ -1,10 +1,10 @@
 import React from 'react';
 import Label from '../Label';
 
-const Input = ({ id, value }) => (
+const Input = ({ id = "", value = "", content = "", type = "text" }) => (
     <>
-        <input id={id} type="checkbox" value={value} />
-        <Label htmlFor={id} content="Mostrar eventos" />
+        <input id={id} type={type} value={value} />
+        <Label htmlFor={id} content={content} />
     </>
 );
 
